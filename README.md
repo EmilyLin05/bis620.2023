@@ -32,3 +32,8 @@ accel |>
 ```
 
 <img src="man/figures/README-example-1.png" width="100%" />
+
+## Test-coverage
+
+This is the link to the test coverage report:
+<https://app.codecov.io/gh/EmilyLin05/bis620.2023/tree/main/R>
