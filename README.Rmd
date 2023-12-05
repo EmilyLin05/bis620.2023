@@ -65,10 +65,10 @@ This is a basic example which we use in shinyApp to demonstrate different phases
 
 ```{r, example, message=FALSE,warning =FALSE,echo = FALSE}
 library(bis620.2023)
-accel |> 
-  head(100) |> 
-  plot_accel()
-#bis620.2023::plot_phase_histogram(studies)
+#accel |> 
+#  head(100) |> 
+#  plot_accel()
+bis620.2023:::plot_phase_histogram(studies)
 
 ```
 
