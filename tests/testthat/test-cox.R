@@ -11,7 +11,7 @@ test_that("cox function returns a coxph model", {
     B_HEIGHT = sample(155:185, 20, replace = TRUE),
     RACE = sample(c("Race1", "Race2", "Race3"), 20, replace = TRUE)
   )
-  
+
   biomark_mock <- data.frame(
     SUBJID = 101:120,
     BMMTR1 = rep(c("Mutant", "Wild-type", "Mutant", "Wild-type"), length.out = 20),
@@ -19,10 +19,10 @@ test_that("cox function returns a coxph model", {
     BMMTR3 = rep(c("Mutant", "Wild-type", "Mutant", "Wild-type"), length.out = 20),
     BMMTR15 = rep(c("Mutant", "Wild-type", "Mutant", "Wild-type"), length.out = 20)
   )
-  
-  
+
+
   dl_mock <- list(adsl = adsl_mock, biomark = biomark_mock)
-  
-  result <- cox(dl_mock) 
+
+  result <- cox(dl_mock)
   expect_s3_class(result, "coxph")
 })
