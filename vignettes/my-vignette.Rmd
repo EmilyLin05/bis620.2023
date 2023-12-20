@@ -1,24 +1,26 @@
 ---
-title: "bis620_report"
+title: "my-vignette"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{bis620}
+  %\VignetteIndexEntry{my-vignette}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
+
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
 ```
+
 ## Team Member
+
+Xunyun Wan (xw479)
 
 Bernice Feng (bf395)
 
 Shuqi Lin (sl2946)
-
-Xunyun Wan
 
 
 ```{r}
@@ -87,5 +89,6 @@ The output of the funtions suggests that certain factors like the KRAS gene stat
 
 ### Summary
 This package provides tools for performing survival analysis, allowing researchers to understand how different variables influence survival time in clinical trial data. The Cox regression function, specifically, helps in identifying which factors may be associated with better or worse survival outcomes, which is crucial for developing personalized treatment plans and understanding disease progression.
+
 
 
